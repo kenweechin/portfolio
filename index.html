@@ -73,7 +73,45 @@
                                 <i class="uil uil-github"></i>
                             </a>
                         </div>
+
+                        <div class="home__img">
+                            <svg class ="home_blob" viewBox="-10 -10 120 120">
+                                <mask id="myMask">
+                                  <!-- Everything under a white pixel will be visible -->
+                                  <rect x="0" y="0" width="100" height="100" fill="white" />
+                              
+                                  <!-- Everything under a black pixel will be invisible -->
+                                  <path
+                                    d="M10,35 A20,20,0,0,1,50,35 A20,20,0,0,1,90,35 Q90,65,50,95 Q10,65,10,35 Z"
+                                    fill="black" />
+                                </mask>
+                              
+                                <polygon points="-10,110 110,110 110,-10" fill="orange" />
+                              
+                                <!-- with this mask applied, we "punch" a heart shape hole into the circle -->
+                                <circle cx="50" cy="50" r="50" mask="url(#myMask)" />
+                              </svg>
+                        </div>
+                        
+                        <div class="home__data">
+                            <h1 class="home__title">Hi, I'm Ken</h1>
+                            <h3 class="home__subtitle">Frontend Developer</h3>
+                            <p class="home__description">High level experience in web design and knowledge, 
+                                producing quality work.</p>
+                            <a href="#contact" class="button button--flex">
+                                Contact Me <i class="uil uil-message button__icon"></i>
+                            </a>
+                        </div>
                     </div>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-button button--flex">
+                            <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                            <span class="home__scroll-name">Scroll Down</span>
+                            <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                        </a>
+                    </div>
+                    
                 </div>
             </section>
         </main>
